@@ -1,0 +1,31 @@
+
+body{
+	width:1366px;
+}
+body,input,p,ul {
+	margin: 0; padding: 0;
+}
+
+html,body {
+	height: 100%;
+	font: 14px "微软雅黑";
+}
+
+ul,button,input {
+	list-style: none;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+.rela{
+	position:relative;
+}
+ a:hover{
+	color:#00C1DE;
+}
+div{
+	box-shadow:0 0 1px blue;
+}

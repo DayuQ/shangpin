@@ -1,0 +1,58 @@
+@mixin clearfix{
+    &::after{
+        content:"";
+        display: block;
+        height:0;width:0;
+        clear:both;
+        overflow: hidden;
+    }
+}
+//上下距离，移动
+@mixin yidao_after($val,$mov,$color:black){
+    &::aftter{
+        content:"";
+        position: absolute;
+        top: $val+px;
+        bottom:  $val+px;
+        right: $mov+px;
+        width: 1px;
+        background: black;
+    }
+}
+
+@mixin yidao_before($val,$mov,$color:black){
+    &::before{
+        content:"";
+        position: absolute;
+        top: $val+px;
+        bottom:  $val+px;
+        right: $mov+px;
+        width: 1px;
+        background: black;
+    }
+}
+
+
+@mixin yiheng_before($val,$mov,$color:black){
+    &::before{
+        content:"";
+        position: absolute;
+        left: $val+px;
+        right:  $val+px;
+        top: $mov+px;
+        height: 1px;
+        background: black;
+    }
+}
+
+@mixin yiheng_after($val,$mov,$color:black){
+    &::after{
+        content:"";
+        position: absolute;
+        left: $val+px;
+        right:  $val+px;
+        top: $mov+px;
+        height: 1px;
+        background: black;
+    }
+}
